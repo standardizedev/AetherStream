@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AetherStream Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Orbitron"', 'sans-serif'],
+            },
+            colors: {
+              // AetherStream Palette
+              'aether-black': '#0A0F1A',
+              'aether-cyan': '#00FFFF',
+              'aether-magenta': '#FF00FF',
+              'aether-green': '#00FF7F',
+              'aether-yellow': '#F0E68C',
+              'aether-red': '#DC143C',
+              'aether-gray': {
+                  100: '#E0E6F1',
+                  300: '#8D94A8',
+                  500: '#4E5469',
+                  700: '#252A3D',
+                  900: '#141829',
+              },
+
+              // Semantic Mapping
+              background: '#0A0F1A',
+              surface: '#141829',
+              border: '#252A3D',
+              
+              'text-primary': '#E0E6F1',
+              'text-secondary': '#8D94A8',
+              
+              'interactive-default': '#00FFFF',
+              'interactive-hover': '#99FFFF',   
+              'focus-ring': '#FF00FF',
+              
+              'positive-default': '#00FF7F',
+              'negative-default': '#DC143C',
+              'warning-default': '#F0E68C',
+            },
+            boxShadow: {
+              'glow-cyan': '0 0 8px rgba(0, 255, 255, 0.6), 0 0 12px rgba(0, 255, 255, 0.4)',
+              'glow-magenta': '0 0 8px rgba(255, 0, 255, 0.6), 0 0 12px rgba(255, 0, 255, 0.4)',
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
